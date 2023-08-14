@@ -4,7 +4,7 @@
         <div class="container">
           <div class="navbar-brand">
             <a class="navbar-item has-text-white is-size-2 has-text-weight-bold" href="#">
-              Your App
+              Exchangario
             </a>
             <span role="button" tabindex="0" class="navbar-burger burger has-text-white" data-target="navbar-menu">
               <span></span>
@@ -26,3 +26,10 @@
       </nav>
     </header>
 </template>
+
+
+<script>
+export default {
+  
+}
+</script>
