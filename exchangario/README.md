@@ -5,9 +5,11 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+### Compiles and hot-reloads for development 
+```bash
+npm run serve 
+# to stop the server
+# ctrl + c
 ```
 
 ### Compiles and minifies for production
