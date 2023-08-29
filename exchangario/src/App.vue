@@ -7,20 +7,16 @@
           :title="brandName"
           :items="menuItems"
        />
-  
-       <ExchangeHero />
-    <router-view />
+      <router-view />
   </div>
 </template>
  
  <script>
-  import ExchangeNavbar from "./components/NavBar.vue";
-  import ExchangeHero from "./components/Hero-Banner.vue";
- export default {
+import ExchangeNavbar from "./components/NavBar.vue";
+export default {
    name: 'App',
    components: {
     ExchangeNavbar,
-    ExchangeHero
      },
     data() {
       return {

@@ -2,10 +2,10 @@
 
 import { createWebHistory, createRouter } from "vue-router";
 import HomePage from "../pages/Home.vue";
-import AboutPage from "../pages/About-About.vue";
-import FaqPage from "../pages/Faq-Faq.vue";
-import LoginPage from "../pages/Login-Login.vue";
-import RegisterPage from "../pages/Register-Register.vue";
+import AboutPage from "../pages/About-Page.vue";
+import FaqPage from "../pages/Faq-Page.vue";
+import LoginPage from "../pages/Login-Page.vue";
+import RegisterPage from "../pages/Register-Page.vue";
 
 
 const routes =[

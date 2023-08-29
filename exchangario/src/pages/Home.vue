@@ -1,5 +1,6 @@
 <template>
     <div id="exchangario">
+      <ExchangeHero />
        <ExchangeList 
           :exchanges="exchanges"
        />
@@ -10,11 +11,15 @@
   <script>
   import ExchangeList from "../components/ExchangeList.vue";
   import ExchangePagination from "../components/Pagination-Exchange.vue";
+  import ExchangeHero from "../components/Hero-Banner.vue";
+
+
   export default {
     name: 'App',
     components: {
       ExchangeList,
-      ExchangePagination
+      ExchangePagination,
+      ExchangeHero
     },
     data() {
       return {
