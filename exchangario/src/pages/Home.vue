@@ -4,6 +4,22 @@
        <ExchangeList 
           :exchanges="exchanges"
        />
+
+        <div class="counter-container">
+          <div>Count: {{count}}</div>
+          <div>Is > 15: {{isBiggerThan15 }}</div>
+          <div>Exchange Length: {{exchangeLength}}</div>
+
+            <button class="button is-primary"
+           @click="increment"
+            >
+              Increment
+            </button>
+
+        </div>
+
+       
+
        <ExchangePagination />
     </div>
   </template>
@@ -12,8 +28,6 @@
   import ExchangeList from "../components/ExchangeList.vue";
   import ExchangePagination from "../components/Pagination-Exchange.vue";
   import ExchangeHero from "../components/Hero-Banner.vue";
-
-
   export default {
     name: 'App',
     components: {
@@ -23,6 +37,7 @@
     },
     data() {
       return {
+        count: 10,
         exchanges: [{
           id: "ad7a1231238dasd",
           type: "product", // service or product
@@ -48,6 +63,30 @@
           tags: ["programming", "code"]
         }]
       }
+    },
+    computed: {
+      exchangeLength(){
+        return this.exchanges.length;
+      },
+      isBiggerThan15() {
+        console.log('re-executing!')
+        return this.count > 15;
+      }
+    },
+    methods: {
+      log() {
+        console.log("Hello World")
+      },
+      increment() {
+        this.count++;
+      }
     }
   }
   </script>
+
+  <style scoped>
+    .counter-container {
+      padding: 200px;
+      font-size: 60px;
+    }
+  </style>
