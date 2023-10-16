@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- START OF NAVBAR -->
     <nav 
     :class="[`navbar-${theme}`, `bg-${theme}`, 'navbar', 'navbar-expand-lg']"
     >
@@ -57,13 +58,22 @@
                 <!-- button for changing theme of navbar -->
             </form>
         </div>
+
+        <!-- END OF NAVBAR -->
+
+
+        <!-- START OF CONTENT -->
     </nav>
     <div id="content" class="container">
         <h1>{{ pages[activePage].pageTitle }}</h1>
         <p>{{ pages[activePage].content }}</p>
     </div>
+        <!-- END OF CONTENT -->
+    
 
     <script>
+
+        // START OF COMPONENT
 
         Vue.createApp({
                 data() {
