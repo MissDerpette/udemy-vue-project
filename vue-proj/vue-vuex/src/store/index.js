@@ -2,7 +2,7 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-    family: [
+    families: [
       "Jean Andrew Fuentes",
       "Kirstine Pineda",
       "Rick Bird",
@@ -13,6 +13,9 @@ export default createStore({
   getters: {
   },
   mutations: {
+    addMember: (state, newMember) => {
+      state.families.push(newMember);
+    }
   },
   actions: {
   },
