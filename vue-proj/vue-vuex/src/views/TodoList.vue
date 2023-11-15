@@ -3,7 +3,7 @@
 
     <form>
         <label>Type here:</label>
-        <input type="text">
+        <input type="text" v-model="list">
         <button type="submit">Add</button>
 
     </form>
@@ -12,7 +12,11 @@
 
 <script>
 export default {
-
+    data() {
+        return {
+            list: '',
+        }
+    }
 }
 </script>
 
