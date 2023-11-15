@@ -1,19 +1,21 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/family">Family</router-link>
+    <router-link to="/family">Family</router-link> |
+    <router-link to="/todo">To Do List</router-link>
+    
     
   </nav>
   <router-view/>
-  <InputForm />
+  <!-- <InputForm /> -->
 </template>
 
 <script>
-import InputForm from './components/InputForm.vue'
+// import InputForm from './components/InputForm.vue'
 
 export default {
-  name: 'App',
-  components: { InputForm }
+  // name: 'App',
+  // components: { InputForm }
 }
 </script>
 

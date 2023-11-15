@@ -1,16 +1,14 @@
 import { createStore } from 'vuex'
-import { VuexPersistence } from 'vuex-persist'
 
 const STORAGE_KEY = 'familyData';
-// const savedData = localStorage.getItem(STORAGE_KEY);
-const vuexLocal = new VuexPersistence({
-  storage: window.localStorage,
-});
+const savedData = localStorage.getItem(STORAGE_KEY);
+
 
 
 export default createStore({
   state: {
     families: 
+    savedData ? JSON.parse(savedData):
      [
       "Jean Andrew Fuentes",
       "Kirstine Pineda",
@@ -45,6 +43,4 @@ export default createStore({
   },
   modules: {
   },
-  plugins: [vuexLocal.plugin],
-
-});
+})
