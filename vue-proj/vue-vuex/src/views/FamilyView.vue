@@ -4,7 +4,7 @@
     <ul>
       <li v-for="family in families" :key="family"
       > 
-        <div class="name"> {{ family }}  </div>
+        <div class="addName"> {{ family }}  </div>
       </li>
     </ul>
 

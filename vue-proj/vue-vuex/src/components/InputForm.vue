@@ -1,5 +1,5 @@
 <template>
-    <form @submit.prevent="submitForm">
+    <form @submit.prevent="submitFamilyForm">
         <label>Add/Update a member: </label>
         <input type="text" required v-model="member">
         <button type="submit">Confirm</button>
@@ -26,7 +26,7 @@ export default {
     };
   },
   methods: {
-    submitForm() {
+    submitFamilyForm() {
       if (this.selectedIndex === null) {
         this.$store.commit('addMember', this.member);
       } else {

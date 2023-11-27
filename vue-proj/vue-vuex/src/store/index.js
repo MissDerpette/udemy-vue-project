@@ -17,6 +17,11 @@ export default createStore({
       "Rick Bird",
       "Freya Dog",
       "Archer Dog"
+    ],
+    todoLists: 
+    [
+      "Clean sink",
+      "Do laundry"
     ]
   },
   getters: {
@@ -25,7 +30,6 @@ export default createStore({
     addMember: (state, newMember) => {
       state.families.push(newMember);
       // localStorage.setItem(STORAGE_KEY, JSON.stringify(state.families));
-      
     },
     updateMember: (state, { index, updatedMember }) => {
       // Check if the index is within the array bounds
@@ -38,6 +42,19 @@ export default createStore({
       // Check if the index is within the array bounds
       if (index >= 0 && index < state.families.length) {
         state.families.splice(index, 1);
+      }
+    },
+    addList: (state, newList) => {
+      state.todoLists.push(newList);
+    },
+    updateList: (state, { index, updatedList }) => {
+      if (index >= 0 && index < state.todoLists.length) {
+        state.todoLists.splice(index, 1, updatedList);
+      }
+    },
+    deleteList: (state, index) => {
+      if (index >= 0 && index < state.todoLists.length) {
+        state.todoLists.splice(index, 1);
       }
     }
   },
