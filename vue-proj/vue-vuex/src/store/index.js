@@ -1,6 +1,11 @@
 import { createStore } from 'vuex'
 import { VuexPersistence } from 'vuex-persist'
 
+import state from '../store/state.js'
+import mutations from '../store/mutations.js'
+import getters from '../store/getters.js'
+import actions from '../store/actions.js'
+
 const STORAGE_KEY = 'familyData';
 // const savedData = localStorage.getItem(STORAGE_KEY);
 const vuexLocal = new VuexPersistence({
@@ -9,55 +14,10 @@ const vuexLocal = new VuexPersistence({
 
 
 export default createStore({
-  state: {
-    families: 
-     [
-      "Jean Andrew Fuentes",
-      "Kirstine Pineda",
-      "Rick Bird",
-      "Freya Dog",
-      "Archer Dog"
-    ],
-    todoLists: 
-    [
-      "Clean sink",
-      "Do laundry"
-    ]
-  },
+  state: state,
   getters: {
   },
-  mutations: {
-    addMember: (state, newMember) => {
-      state.families.push(newMember);
-      // localStorage.setItem(STORAGE_KEY, JSON.stringify(state.families));
-    },
-    updateMember: (state, { index, updatedMember }) => {
-      // Check if the index is within the array bounds
-      if (index >= 0 && index < state.families.length) {
-        state.families.splice(index, 1, updatedMember);
-        // localStorage.setItem(STORAGE_KEY, JSON.stringify(state.families));
-      }
-    },
-    deleteMember: (state, index) => {
-      // Check if the index is within the array bounds
-      if (index >= 0 && index < state.families.length) {
-        state.families.splice(index, 1);
-      }
-    },
-    addList: (state, newList) => {
-      state.todoLists.push(newList);
-    },
-    updateList: (state, { index, updatedList }) => {
-      if (index >= 0 && index < state.todoLists.length) {
-        state.todoLists.splice(index, 1, updatedList);
-      }
-    },
-    deleteList: (state, index) => {
-      if (index >= 0 && index < state.todoLists.length) {
-        state.todoLists.splice(index, 1);
-      }
-    }
-  },
+  mutations: mutations,
   actions: {
   },
   modules: {
