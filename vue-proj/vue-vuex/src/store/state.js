@@ -14,5 +14,41 @@ export default {
           "Clean sink",
           "Do laundry"
         ],
-      }
+        myTechStacks: {
+          frontEnd: [
+            "HTML",
+            "CSS3",
+            "Javascript",
+            "Node.JS",
+          ],
+          libraries: [
+            "JQuery",
+            "Bootstrap"
+          ],
+          Frameworks: [
+            "Vue.JS",
+            [
+              "Vuex",
+              "Vue router"]
+          ],
+          CloudServices: [
+            "Google",
+            [
+              "Firebase",
+              "Firestore",
+              "Fireauth"
+            ]
+          ],
+          Others: [
+            "Scrum methodology",
+            "Clean coding"
+          ]
+
+          
+        }
+
+  
+
+      }, 
 }
+

@@ -1,6 +1,6 @@
 <template>
   <div> <h1> This is Skills page</h1>
-
+    
     <TechSkills />
 </div>
 </template>
@@ -10,5 +10,10 @@ import TechSkills from '../components/TechSkills.vue'
 export default {
     name: 'App',
     components: { TechSkills },
+    computed: {
+        myTechStacks() {
+            return this.$store.state.myTechStacks
+        }
+    }
 }
 </script>
