@@ -7,7 +7,6 @@ import getters from '../store/getters.js'
 import actions from '../store/actions.js'
 
 const STORAGE_KEY = 'familyData';
-// const savedData = localStorage.getItem(STORAGE_KEY);
 const vuexLocal = new VuexPersistence({
   storage: window.localStorage,
 });
