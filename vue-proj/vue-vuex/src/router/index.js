@@ -4,6 +4,8 @@ import FamilyView from '../views/FamilyView.vue'
 import TodoListView from '../views/TodoListView.vue'
 import SkillsView from '../views/SkillsView.vue'
 import AboutMeView from '../views/AboutMeView.vue'
+import ProjectView from '../views/ProjectView.vue'
+
 
 
 const routes = [
@@ -31,6 +33,11 @@ const routes = [
     path: '/aboutme',
     name: 'aboutMe',
     component: AboutMeView
+  },
+  {
+    path: '/projects',
+    name: 'project',
+    component: ProjectView
   }
 
 ]

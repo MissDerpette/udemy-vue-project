@@ -4,7 +4,9 @@
     <router-link to="/family">Family</router-link> |
     <router-link to="/todo">To Do List</router-link> |
     <router-link to="/skills">Skills</router-link> |
-    <router-link to="/aboutme"> About Me</router-link>
+    <router-link to="/aboutme"> About Me</router-link> |
+    <router-link to="/projects"> Projects </router-link>
+
     
     
   </nav>
