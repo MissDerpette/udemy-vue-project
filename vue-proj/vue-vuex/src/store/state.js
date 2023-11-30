@@ -37,6 +37,7 @@ export default {
             "Fireauth"
           ],
           Others: [
+            "Postman",
             "Scrum methodology",
             "Clean coding"
           ] 
