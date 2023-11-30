@@ -1,12 +1,9 @@
 <template>
-    <div><h1>This is skills component</h1>
+    <div>
+        <h2> {{title}}</h2>
         <ul>
-            <li v-for="myTechStack in myTechStacks"
-            :key="myTechStack"
-            >
-                 <div class="myTech">
-                     {{ myTechStack }}
-                 </div>
+            <li v-for="item in skills" :key=item>
+                     {{ item }}
              </li>
         </ul>
     </div>
@@ -17,6 +14,7 @@ import SkillsView from '../views/SkillsView.vue'
 export default {
     name: 'App',
     components: { SkillsView },
+    props : ['skills', 'title'],
     computed: {
         myTechStacks() {
             return this.$store.state.state.myTechStacks

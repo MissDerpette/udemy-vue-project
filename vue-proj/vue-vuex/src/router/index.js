@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import FamilyView from '../views/FamilyView.vue'
 import TodoListView from '../views/TodoListView.vue'
 import SkillsView from '../views/SkillsView.vue'
+import AboutMeView from '../views/AboutMeView.vue'
 
 
 const routes = [
@@ -25,7 +26,13 @@ const routes = [
     path: '/skills',
     name: 'techSkills',
     component: SkillsView
+  },
+  {
+    path: '/aboutme',
+    name: 'aboutMe',
+    component: AboutMeView
   }
+
 ]
 
 const router = createRouter({

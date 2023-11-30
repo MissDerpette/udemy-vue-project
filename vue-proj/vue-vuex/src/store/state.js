@@ -27,28 +27,20 @@ export default {
           ],
           Frameworks: [
             "Vue.JS",
-            [
               "Vuex",
-              "Vue router"]
+              "Vue router"
           ],
           CloudServices: [
             "Google",
-            [
-              "Firebase",
-              "Firestore",
-              "Fireauth"
-            ]
+            "Firebase",
+            "Firestore",
+            "Fireauth"
           ],
           Others: [
             "Scrum methodology",
             "Clean coding"
-          ]
-
-          
+          ] 
         }
-
-  
-
       }, 
 }
 

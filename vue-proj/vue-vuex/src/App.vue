@@ -3,7 +3,8 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/family">Family</router-link> |
     <router-link to="/todo">To Do List</router-link> |
-    <router-link to="/skills">Skills</router-link>
+    <router-link to="/skills">Skills</router-link> |
+    <router-link to="/aboutme"> About Me</router-link>
     
     
   </nav>

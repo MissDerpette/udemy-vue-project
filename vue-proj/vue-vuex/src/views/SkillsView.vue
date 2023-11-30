@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import TechSkills from '../components/TechSkills.vue'
+import TechSkills from '../components/TechSkillsManager.vue'
 export default {
     name: 'App',
     components: { TechSkills },
