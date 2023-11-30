@@ -2,27 +2,27 @@
     <div>
         <h1>This is skills Manager</h1>
 
-        <skill-list 
+        <SkillList 
             title="Front End Web Development" 
             :skills="myTechStacks.frontEnd" 
         />
 
-        <skill-list 
+        <SkillList 
             title="Libraries" 
             :skills="myTechStacks.libraries" 
         />
 
-        <skill-list 
+        <SkillList
             title="Frameworks" 
             :skills="myTechStacks.Frameworks" 
         />
 
-        <skill-list
+        <SkillList
             title="Cloud Services"
             :skills="myTechStacks.CloudServices"
         />
 
-        <skill-list
+        <SkillList
             title="Others"
             :skills="myTechStacks.Others"
         />
